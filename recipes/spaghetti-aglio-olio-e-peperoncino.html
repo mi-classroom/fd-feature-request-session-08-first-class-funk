@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entdecke die italienische Küche - Mit 35 tollen Rezepten zum Nachkochen und Genießen. Erfahre mehr über die italienische Küche und ihre Spezialitäten.">
+
     <title>Spaghetti aglio, olio e peperoncino</title>
 
     <link rel="stylesheet" href="../assets/styles/reset.css">
@@ -23,6 +25,7 @@
 </head>
 
 <body>
+    <header>
     <div class="navbar" data-js-menue id="main-navigation">
         <div>
             <ul>
@@ -34,7 +37,7 @@
             </ul>
         </div>
     </div>
-
+    </header>
     <div class="menue-button" data-js-menue-button>
         <a href="#main-navigation"><img src="../assets/icons/menue.svg" alt="Menu"></a>
     </div>
@@ -66,7 +69,7 @@
 
         <section id="zutaten-und-naehrwerte">
             <h2 class="quantity-selector-head">Angaben für <span class="highlighted">
-                    <select name="quantity-selector" id="quantity-selector" data-quantity-selector>
+                    <select name="quantity-selector" id="quantity-selector" data-quantity-selector aria-label="Anzahl der Portionen">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -160,7 +163,7 @@
             <ol class="steps">
                 <li>
                     <figure>
-                        <img src="../images/step-1.jpg" alt="Topf mit kassen Spaghetti drin">
+                        <img src="../images/step-1.jpg" alt="Topf mit Spaghetti, Schritt 1">
                         <figcaption class="has-counter">
                             Die Spaghetti nach Packungsanleitung kochen. Kurz vor Ende der Garzeit 2 Kellen vom
                             Kochwasser
@@ -170,7 +173,7 @@
                 </li>
                 <li>
                     <figure class="is-reversed">
-                        <img src="../images/step-2.jpg" alt="Topf mit kassen Spaghetti drin">
+                        <img src="../images/step-2.jpg" alt="Zutaten schneiden, Schritt 2">
                         <figcaption class="has-counter">
                             Den Hartkäse mit einer Reibe zerkleinern. Die Tomate in kleine Würfel schneiden und in eine
                             Schüssel
@@ -182,7 +185,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../images/step-3.jpg" alt="Topf mit kassen Spaghetti drin">
+                        <img src="../images/step-3.jpg" alt="Gewürze beimischen, Schritt 3">
                         <figcaption class="has-counter">
                             Basilikum, Oregano, Petersilie und Peperoni ebenfalls klein schneiden und zur Würzmischung
                             in der
@@ -203,7 +206,7 @@
                 </li>
                 <li>
                     <figure class="is-reversed">
-                        <img src="../images/step-4.jpg" alt="Topf mit kassen Spaghetti drin">
+                        <img src="../images/step-4.jpg" alt="Öl beigeben, Schritt 4">
                         <figcaption class="has-counter">
                             Vor dem Servieren das kalte Olivenöl über die Pasta geben und vermischen. Nicht vorher, da
                             das Öl
@@ -260,15 +263,15 @@
                     </li>
                     <li class="other-recipes-list__item" data-js-slide>
                         <figure>
-                            <img src="../images/other-recipes/spaghetti-bolognese.jpg" alt="Spaghetti alla Melanzane">
-                            <figcaption>Spaghetti alla Melanzane</figcaption>
+                            <img src="../images/other-recipes/spaghetti-bolognese.jpg" alt="Spaghetti Bolognese">
+                            <figcaption>Spaghetti Bolognese</figcaption>
                         </figure>
                     </li>
                     <li class="other-recipes-list__item" data-js-slide>
-                        <div>
+                        <figure>
                             <img src="../images/other-recipes/spaghetti-carbonara.jpg" alt="Spaghetti alla Melanzane">
-                            <p>Spaghetti alla Melanzane</p>
-                        </div>
+                            <figcaption>Spaghetti alla Melanzane</figcaption>
+                        </figure>
                     </li>
                     <li class="other-recipes-list__item" data-js-slide>
                         <figure>
@@ -293,8 +296,8 @@
             <h2>Kommentare</h2>
             <div class="comment">
                 <div class="comment-user-info">
-                    <img src="../images/user.png" alt="Logo">
-                    <p>Username</p>
+                    <img src="../images/user.png" alt="Profilbild">
+                    <h3>Username</h3>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil quibusdam neque temporibus
                     perferendis repudiandae ex expedita, eaque quasi. Neque, corrupti enim. Repellendus labore excepturi
@@ -307,17 +310,17 @@
                 <div class="form-container">
                     <div class="input-container">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Max Mustermann">
+                        <input type="text" id="name" name="name" placeholder="Max Mustermann" autocomplete="name">
                     </div>
 
                     <div class="input-container">
-                        <label>E-Mail</label>
-                        <input type="email" name="email" placeholder="max@mustermann.de">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="max@mustermann.de" autocomplete="email">
                     </div>
                 </div>
 
-                <label>Nachricht</label>
-                <textarea name="message" placeholder="Tolles Rezept!"></textarea>
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" placeholder="Tolles Rezept!"></textarea>
 
                 <label>
                     <input type="checkbox" name="data">

@@ -371,11 +371,11 @@ form input[type="checkbox"] {
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-.comment-user-info p {
+.comment-user-info h3 {
   margin: 0 0 0 1.5rem;
 }
 
-.comment p:last-child {
+.comment h3:last-child {
   width: 100%;
 }
 
